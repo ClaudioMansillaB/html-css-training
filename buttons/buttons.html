@@ -11,6 +11,20 @@
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
+        /* agregamos el atributo transition
+        el cual toma 2 elementos para asi tener
+        una transicion mas suave */
+        transition: opacity 0.15s;
+    }
+    /* hover: indica a lo que cambiara el estilo
+    al momento de poner el cursor encima.
+       active: indica a lo que cambiara */
+    .subscribe-button:hover{
+        opacity: 0.7;
+    }
+
+    .subscribe-button:active{
+        opacity: 0.4;
     }
 
     .join-button {
@@ -24,6 +38,19 @@
         border-radius: 2px;
         cursor: pointer; 
         margin-right: 8px;
+        /* podemos poner mas de una transicion mientras
+        lo necesitemos */
+        transition: background-color 0.15s,
+                    color 0.15s;
+    }
+
+    .join-button:hover{
+        background-color: rgb(81, 151, 243);;
+        color:white;;
+    }
+
+    .join-button:active{
+        opacity: 0.7;
     }
 
     .tweet-button{
@@ -36,6 +63,11 @@
         font-weight: bold;
         font-size: 15px;
         cursor: pointer;
+        transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     }
 </style>
 
