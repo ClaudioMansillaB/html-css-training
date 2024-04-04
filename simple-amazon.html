@@ -11,6 +11,11 @@
 
     }
 
+    .info{
+        font-weight: bold;
+        font-size: 23;
+    }
+
     .add-button{
         background-color: rgb(255, 216, 20);
         height: 35px;
@@ -19,7 +24,18 @@
         border-radius: 90px;
         font-weight: 550;
         font-size: 15px;
-         
+        cursor: pointer;
+
+        transition: background-color 0.15s,
+                    opacity 0.15s;
+        }
+
+    .add-button:hover{
+        background-color: rgb(236, 197, 0);
+    }
+
+    .add-button:active{
+        opacity: 0.5;
     }
 
     .buy-button{
@@ -30,6 +46,27 @@
         border-radius: 90px;
         font-weight: bold;
         font-size: 15px;
+        cursor: pointer;
+
+        transition: background-color 0.15s,
+                    opacity 0.15s;
+    }
+
+    .buy-button:hover{
+        background-color:  rgb(240, 158, 6);
+    }
+
+    .buy-button:active{
+        opacity: 0.5;
+    }
+
+    a{
+        color:rgb(47, 47, 255);
+        transition: color 0.15s;
+    }
+
+    a:hover {
+        color:rgb(202, 131, 0);
     }
 </style>
 
@@ -47,7 +84,7 @@
 </p>
 
 <p class = 'info'>
-
+    Free delivery tomorrow
 </p>
 
 <button class="add-button">
